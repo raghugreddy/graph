@@ -40,7 +40,7 @@ public class  BreadthFirstTravese {
         );
         
         breadth.breadthFirstTravese( graph, "A");
-        
+
         Map<String, List<String> > graph2 = Map.ofEntries(
             Map.entry("A", Arrays.asList("C", "B")),
             Map.entry("B", Arrays.asList("D")),
@@ -50,5 +50,6 @@ public class  BreadthFirstTravese {
             Map.entry("F", Collections.emptyList())
             ) ;
    
+            
     }
 }

@@ -65,7 +65,6 @@ public class DepthFirstTraverse {
             .collect(Collectors.toMap((e) -> e.getKey(), (e) -> e.getValue())));
         
         System.out.println(graph2);
-        depthFirst.depthFirstRecTraverse(graph2, "A");
-        
+        depthFirst.depthFirstRecTraverse(graph2, "A");  
     }
 }
