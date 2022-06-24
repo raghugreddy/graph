@@ -14,6 +14,7 @@ public class DepthFirstTraverse {
         stack = new Stack<>();
     }
 
+    /* Iterate method for Depth first Traverse */
     public void depthFistTraverse(Map<String, String[]> graph, String node){
         stack.push(node);
 
@@ -29,6 +30,7 @@ public class DepthFirstTraverse {
         }
     }
 
+    /* Reccursive method for Depth First Taraverse */
     public void depthFirstRecTraverse(Map<String, String[]> graph, String node) {
         System.out.println(node);
         if (graph.containsKey(node)) {
