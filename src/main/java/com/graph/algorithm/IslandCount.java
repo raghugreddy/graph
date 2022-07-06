@@ -41,6 +41,10 @@ public class IslandCount {
         if (!(rowInbound && colInbound) )
             return false;
 
+        // return if the value is "W" water
+        if (grid.get(rowIdx).get(colIdx).equalsIgnoreCase("W") )
+            return false;
+
         // return if the row and column index combination of grid already visited.
         String key = rowIdx +","+colIdx;
         if (visited.contains(key))
@@ -50,10 +54,6 @@ public class IslandCount {
         visited.add(key);
         //System.out.println("key: " + key);
 
-        // return if the value is "W" water
-        if (grid.get(rowIdx).get(colIdx).equalsIgnoreCase("W") )
-            return false;
-        
         // explore returssivly for the adjecent row, columns 
         exploreIsland(grid, rowIdx+1, colIdx, visited);
         exploreIsland(grid, rowIdx-1, colIdx, visited);
